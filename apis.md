@@ -5,7 +5,7 @@ description: This is a repository of stocklytics APIs, self-contained as a Githu
   operations.
 image: http://template.streamdata.gallery/assets/stocklytics.png
 created: "2018-02-24"
-modified: "2018-06-19"
+modified: "2018-06-20"
 url: http://stocklytics.streamdata.gallery/apis.json
 specificationVersion: "0.14"
 apis: []
