@@ -19,6 +19,28 @@ produces:
 consumes:
 - application/json
 paths:
+  companyData/{API_VERSION}/:
+    get:
+      summary: Company Data
+      description: The Company Data API allows you to retrieve company information
+        about a particular stock/ticker code.
+      operationId: getCompanyData
+      x-api-path-slug: companydataapi-version-get
+      parameters:
+      - in: query
+        name: api_key
+        description: Allows us to identify the request initiator
+      - in: path
+        name: API_VERSION
+        description: Version of the API
+      - in: query
+        name: stock
+        description: The stock code/ticker for the stock to look up
+      responses:
+        200:
+          description: OK
+      tags:
+      - Companies
   historicalPrices/{API_VERSION}/:
     get:
       summary: Historical Prices
